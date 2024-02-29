@@ -169,7 +169,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../img/intro-bg-gw.png) center center no-repeat;
+	background: url(../img/index-bg-gw.jpg) center center no-repeat;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -562,19 +562,19 @@ color: #777;
 }
 
 .intro-new-westfield {
-	background: url(../img/grandwisata/new-westfield.webp) center center no-repeat;
+	background: url(../img/grandwisata/new-westfield/new-west-field-bg.jpg) center center no-repeat;
 }
 
 .intro-z-living {
-	background: url(../img/grandwisata/z-living.png) center center no-repeat;
+	background: url(../img/grandwisata/z-living/z-living-bg.jpeg) center center no-repeat;
 }
 
 .intro-new-water-terrace {
-	background: url(../img/grandwisata/new-water-terrace.webp) center center no-repeat;
+	background: url(../img/grandwisata/new-water-terrace/new-water-terrace-bg.jpeg) center center no-repeat;
 }
 
 .intro-tanamas {
-	background: url(../img/grandwisata/tanamas.jpeg) center center no-repeat;
+	background: url(../img/grandwisata/tanamas/tanamas-bg.jpeg) center center no-repeat;
 }
 
 .intro-new-cherry-ville {
