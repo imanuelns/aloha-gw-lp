@@ -38,6 +38,12 @@ function main() {
             effect: 'slideDown',  
             keyboardNav: true,                            
         });
+    
+    /* DELAYED MODAL */
+    setTimeout(function(){
+      $('#interrupt-modal').modal('show');
+    }, 5000);
+
 		
 }());
 
