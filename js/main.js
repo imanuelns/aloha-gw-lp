@@ -51,7 +51,7 @@ function main() {
         return
       }
       setWithExpiry('intLock',true,21600000); // 6 hours of TTL
-      window.location.replace('https://wa.link/vudbol')
+      window.location.replace('https://wa.link/9ro9gc')
     });
 
 }());
