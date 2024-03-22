@@ -580,3 +580,39 @@ color: #777;
 .intro-new-cherry-ville {
 	background: url(../img/grandwisata/new-cherry-ville.jpeg) center center no-repeat;
 }
+
+/* CUSTOM INTERRUPT MODAL */
+.int-modal-content {
+	background-color: transparent;
+	display: flex;
+	justify-content: center; 
+	align-items: center; 
+}
+
+.int-modal {
+	background: transparent;
+	justify-content: center; 
+	align-items: center; 
+}
+
+.int-modal-body{
+	width: 400px;
+	height: 720px;
+	background-image: url('../img/banner/levante_int.jpg');
+	background-size: cover;
+	background-position: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.int-modal-body img {
+	width: 100%;
+	height: 720px;
+}
+
+.int-modal-footer {
+	padding-top: 3%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
