@@ -45,8 +45,42 @@ function main() {
     }, 5000);
 
 		
+    /* EVENT CLICK */
+    $('.int-modal-body').click(function(e){
+      if (getWithExpiry('intLock') === true){
+        return
+      }
+      setWithExpiry('intLock',true,21600000); // 6 hours of TTL
+      window.location.replace('https://wa.link/vudbol')
+    });
+
 }());
 
 
 }
 main();
+
+// Function to set an item in localStorage with a TTL
+function setWithExpiry(key, value, ttl) {
+  const now = new Date();
+  const item = {
+      value: value,
+      expiry: now.getTime() + ttl // TTL in milliseconds
+  };
+  localStorage.setItem(key, JSON.stringify(item));
+}
+
+// Function to retrieve an item from localStorage and check if it has expired
+function getWithExpiry(key) {
+  const itemStr = localStorage.getItem(key);
+  if (!itemStr) {
+      return null; // Item does not exist
+  }
+  const item = JSON.parse(itemStr);
+  const now = new Date();
+  if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key); // Remove the item if it has expired
+      return null; // Item has expired
+  }
+  return item.value; // Return the value if it's still valid
+}
