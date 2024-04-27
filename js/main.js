@@ -41,18 +41,22 @@ function main() {
     
     /* DELAYED MODAL */
     setTimeout(function(){
+      if (getWithExpiry('intLock') === true){
+        return
+      }
+      setWithExpiry('intLock',true,21600000); // 6 hours of TTL
       $('#interrupt-modal').modal('show');
     }, 5000);
 
 		
     /* EVENT CLICK */
-    $('.int-modal-body').click(function(e){
+    /* $('.int-modal-body').click(function(e){
       if (getWithExpiry('intLock') === true){
         return
       }
       setWithExpiry('intLock',true,21600000); // 6 hours of TTL
       window.location.replace('https://wa.link/9ro9gc')
-    });
+    }); */
 
 }());
 
