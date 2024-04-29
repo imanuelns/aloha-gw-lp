@@ -581,6 +581,10 @@ color: #777;
 	background: url(../img/grandwisata/new-cherry-ville/new-cherry-ville.jpeg) center center no-repeat;
 }
 
+.intro-yara {
+	background: url(../img/grandwisata/yara/yara.png) center center no-repeat;
+}
+
 /* CUSTOM INTERRUPT MODAL */
 .int-modal-content {
 	background-color: transparent;
