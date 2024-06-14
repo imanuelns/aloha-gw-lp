@@ -40,13 +40,13 @@ function main() {
         });
     
     /* DELAYED MODAL */
-    setTimeout(function(){
+    /*setTimeout(function(){
       if (getWithExpiry('intLock') === true){
         return
       }
       setWithExpiry('intLock',true,21600000); // 6 hours of TTL
       $('#interrupt-modal').modal('show');
-    }, 5000);
+    }, 5000);*/
 
 		
     /* EVENT CLICK */
