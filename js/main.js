@@ -88,3 +88,39 @@ function getWithExpiry(key) {
   }
   return item.value; // Return the value if it's still valid
 }
+
+/* Swiper */
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 4,
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+  },
+  speed: 500,
+  breakpoints: {
+  // when window width is >= 320px
+  320: {
+      slidesPerView: 1,
+      spaceBetween: 5
+  },
+  // when window width is >= 480px
+  480: {
+      slidesPerView: 2,
+      spaceBetween: 10
+  },
+  // when window width is >= 640px
+  640: {
+      slidesPerView: 3,
+      spaceBetween: 15
+  },
+  // when window width is >= 992px
+  992: {
+      slidesPerView: 4,
+      spaceBetween: 20
+  }
+}
+});
