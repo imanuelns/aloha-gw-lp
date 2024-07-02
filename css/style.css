@@ -505,13 +505,6 @@ color: #777;
 	color: #e52f3c;
 }
 
-@media (max-width: 768px) {
-#about img {
-	margin: 50px 0;
-}
-}
-
-
 /* CUSTOM START HERE */
 
 
@@ -692,4 +685,12 @@ color: #777;
 	z-index: 10;
 }
 
+.banner-wrapper{
+	padding-top: 85px;
+}
 
+@media (max-width: 776px) {
+    .navbar-brand img {
+        width: 55%;
+    }
+}
