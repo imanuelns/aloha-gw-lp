@@ -22,7 +22,13 @@
 <!-- Bootstrap -->
 <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+<!-- Swiper -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<!-- Owl Sliding -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
 <!-- Stylesheet
     ================================================== -->
@@ -55,6 +61,7 @@
     ==========================================-->
 <nav id="menu" class="navbar navbar-default navbar-fixed-top">
   <div class="container"> 
+    
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -82,8 +89,41 @@
     <!-- /.navbar-collapse --> 
   </div>
 </nav>
+
+<div class="banner-wrapper">
+  <div class="owl-carousel hero-carousel">
+    <div class="item">
+        <img class="owl-lazy" data-src="https://www.grandwisatabekasi.com/wp-content/uploads/2024/03/levante-8-1.png" alt="" src="https://www.grandwisatabekasi.com/wp-content/uploads/2024/03/levante-8-1.png" style="opacity: 1;">
+    </div>
+    <div class="item">
+        <img class="owl-lazy" data-src="https://www.grandwisatabekasi.com/wp-content/uploads/2024/03/GL-1.png" alt="" src="https://www.grandwisatabekasi.com/wp-content/uploads/2024/03/GL-1.png" style="opacity: 1;">
+    </div>
+    <div class="item">
+        <img class="owl-lazy" data-src="https://www.grandwisatabekasi.com/wp-content/uploads/2023/12/TMN-1.png" alt="" src="https://www.grandwisatabekasi.com/wp-content/uploads/2023/12/TMN-1.png" style="opacity: 1;">
+    </div>
+    <div class="item">
+        <img class="owl-lazy" data-src="https://www.grandwisatabekasi.com/wp-content/uploads/2023/12/Levante-10.png" alt="" src="https://www.grandwisatabekasi.com/wp-content/uploads/2023/12/Levante-10.png" style="opacity: 1;">
+    </div>
+    <div class="item">
+        <img class="owl-lazy" data-src="https://www.grandwisatabekasi.com/wp-content/uploads/2023/09/banner.png" alt="" src="https://www.grandwisatabekasi.com/wp-content/uploads/2023/09/banner.png" style="opacity: 1;">
+    </div>
+    <div class="item">
+        <img class="owl-lazy" data-src="https://www.grandwisatabekasi.com/wp-content/uploads/2024/05/2.png" alt="" src="https://www.grandwisatabekasi.com/wp-content/uploads/2024/05/2.png" style="opacity: 1;">
+    </div>
+    <div class="item">
+        <img class="owl-lazy" data-src="https://www.grandwisatabekasi.com/wp-content/uploads/2024/05/1.png" alt="" src="https://www.grandwisatabekasi.com/wp-content/uploads/2024/05/1.png" style="opacity: 1;">
+    </div>
+    <div class="item">
+        <img class="owl-lazy" data-src="https://www.grandwisatabekasi.com/wp-content/uploads/2024/05/5.png" alt="" src="https://www.grandwisatabekasi.com/wp-content/uploads/2024/05/5.png" style="opacity: 1;">
+    </div>
+    <div class="item">
+        <img class="owl-lazy" data-src="https://www.grandwisatabekasi.com/wp-content/uploads/2024/03/4.png" alt="" src="https://www.grandwisatabekasi.com/wp-content/uploads/2024/03/4.png" style="opacity: 1;">
+    </div>
+  </div>
+</div>
+
 <!-- Header -->
-<header id="header">
+<!-- <header id="header">
   <div class="intro">
     <div class="overlay">
       <div class="container">
@@ -103,7 +143,8 @@
       </div>
     </div>
   </div>
-</header>
+</header> -->
+
 <!-- Get Touch Section -->
 <!-- <div id="get-touch">
   <div class="container">
@@ -116,12 +157,13 @@
     </div>
   </div>
 </div> -->
+
 <!-- About Section -->
 <div id="about">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-md-4"> <img src="img/grandwisata/logo/grandwisata-logo-big.webp" class="img-responsive" alt=""> </div>
-      <div class="col-xs-12 col-md-8">
+      <div class="col-xs-4 col-md-2"> <img src="img/grandwisata/logo/grandwisata-logo-big.webp" class="img-responsive" alt=""> </div>
+      <div class="col-xs-8 col-md-8">
         <div class="about-text">
           <h2>GRAND WISATA BEKASI</h2>
           <p >
@@ -132,7 +174,7 @@
       </div>
     </div>
   </div>
-</div>
+
 
 <div class="container">
   <div class="section-title">
@@ -368,9 +410,26 @@
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/datalayer.js"></script>
 
+<script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        nav: false,
+        lazyLoad: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true
+    });
+  });
+  </script>
+
+  
 </body>
 </html>
