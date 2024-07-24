@@ -303,6 +303,10 @@ header .intro-text {
 	padding: 100px 0;
 	background: #f6f6f6;
 }
+#portfolio-white {
+	padding: 100px 0;
+	background: #ffffff;
+}
 .portfolio-item {
 	margin: 15px 0;
 }
@@ -578,6 +582,10 @@ color: #777;
 	background: url(../img/grandwisata/yara/yara.png) center center no-repeat;
 }
 
+.intro-yara-new {
+	background: url(../img/grandwisata/yara/yara-bg-new.png) center center no-repeat;
+}
+
 /* CUSTOM INTERRUPT MODAL */
 .int-modal-content {
 	background-color: transparent;
@@ -693,4 +701,31 @@ color: #777;
     .navbar-brand img {
         width: 55%;
     }
+}
+
+.fusion-wrapper{
+	text-align: center;
+}
+
+.circle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-color:#212934;
+	border-width:1px;
+	background-color:#212934;
+	box-sizing:content-box;
+	height:40px;
+	width:40px;
+	line-height:40px;
+	border-radius:50%;
+	position:relative;
+	top:auto;
+	left:auto;
+	margin:0;
+	font-size:20px;
+}
+
+.bold-text {
+    font-weight: bold;
 }
