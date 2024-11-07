@@ -2,7 +2,7 @@
 function pushWADataLayer(){
     dataLayer.push({
         'event':'click-wa',
-        'name':'WA button clicked',
+        'name':'WA button clickod - body',
         'location':'body',
     });
 }
