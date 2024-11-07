@@ -20,7 +20,8 @@ $('.whatsapp-btn-1').on('click',pushWADataLayer);
 
 $('.whatsapp-float').on('click',function(){
     dataLayer.push({
-        'event':'click',
-        'name':'WA button click - float',
+        'event':'click-wa',
+        'name':'WA button click',
+        'location':'float',
     });
 });
