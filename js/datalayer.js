@@ -8,12 +8,18 @@ function pushWADataLayer(){
 
 $('#vicente-btn-navbar').on('click',function(){
     dataLayer.push({
-        'event':'click_navbar',
-        'name':'vicente navbar click',
+        'event':'click',
+        'name':'navbar click - vicente',
     });
 });
 
 /* set button events on whatsapp */
 $('.whatsapp-btn').on('click',pushWADataLayer);
 $('.whatsapp-btn-1').on('click',pushWADataLayer);
-$('.whatsapp-float').on('click',pushWADataLayer);
+
+$('.whatsapp-float').on('click',function(){
+    dataLayer.push({
+        'event':'click',
+        'name':'WA button click - float',
+    });
+});
