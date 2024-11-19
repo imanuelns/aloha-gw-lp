@@ -90,7 +90,9 @@
             <br>
             <br>
             <br>
-            <a href="https://wa.link/vudbol" class="btn btn-custom btn-lg page-scroll whatsapp-btn" target="_blank"><span class="fa fa-whatsapp"></span> HUBUNGI KAMI ! </a> </div>
+            <a href="https://wa.link/vudbol" class="btn btn-custom btn-lg page-scroll whatsapp-btn" target="_blank"><span class="fa fa-whatsapp"></span> HUBUNGI KAMI ! </a><br><br>
+            <a class="btn btn-custom btn-lg page-scroll brochure-modal" data-toggle="modal" data-target="#brochureModal" style="background-color: rgba(201, 88, 12, 0.652);"> DOWNLOAD E - BROSUR YARA AT THE KAIA </a>
+          </div>
         </div>
 
       </div>
@@ -397,9 +399,10 @@
     <div id="row">
       <div class="container">
         <div class="fusion-wrapper">
-          <a href="https://wa.link/fnpod8" class="btn btn-custom btn-lg page-scroll" style="background-color: rgba(201, 88, 12, 0.652);"> DAPATKAN E - BROSUR YARA AT THE KAIA </a> </div>
+          <a class="btn btn-custom btn-lg page-scroll brochure-modal" data-toggle="modal" data-target="#brochureModal" style="background-color: rgba(201, 88, 12, 0.652);"> DOWNLOAD E - BROSUR YARA AT THE KAIA </a> 
         </div>
       </div>
+    </div>
   </div>
 </div>
 
@@ -721,6 +724,39 @@
         <img src="img/grandwisata/yara/fitur/the-kaia-yara-multi-function-room.webp" class="img-responsive" alt="Tol Jakarta-Cikampek"> </a>
         <h4 class="bold-text">Multi-function Room</h4>
         <p>Yara dirancang untuk memberikan keleluasaan bagi pemiliknya dalam mendesain ruangan sesuai kebutuhannya.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="brochureModal" tabindex="-1" role="dialog" aria-labelledby="brochureModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="brochureModalLabel">Get Your E-Brochure</h4>
+      </div>
+      <div class="modal-body">
+        <form id="brochureForm" action="server/download.php" method="POST">
+          <div class="form-group">
+            <label for="name">Nama</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+            <span class="error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Telepon</label>
+            <input type="tel" class="form-control" id="phone" name="phone" required>
+            <span class="error" id="phoneError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email">
+            <span class="error" id="emailError"></span>
+          </div>
+          <input type="text" name="source" style="display: none" value="yara-new">
+          <button type="submit" class="btn btn-primary">Download Sekarang !</button>
+        </form>
       </div>
     </div>
   </div>
