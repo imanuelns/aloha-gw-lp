@@ -62,7 +62,7 @@ if (isset($_POST['name']) && isset($_POST['phone'])) {
     
         // Recipients
         $mail->setFrom('alohaproperty.id@gmail.com', 'Aloha Bot');     // Sender's email and name
-        $mail->addAddress('alohaproperty.id@gmail.com', 'Aloha Admin'); // Add a recipient
+        $mail->addAddress('imanuelnsdev@gmail.com', 'Aloha Admin'); // Add a recipient
         //$mail->AddCC();
 
         // Content
