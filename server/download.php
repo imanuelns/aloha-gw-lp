@@ -16,8 +16,14 @@ function formatPhoneNumber($phone) {
 }
 
 function generateBodyContent($name,$phone,$email,$source){
-    return '<h1> ALOHA </h1><br>' .
+    if ($email == '') {
+        $email = '-';
+    }
+
+    return '<h2> ALOHA MICROSITE DATA </h2><br>' .
                         'Nama ' . $name . '<br>' .
+                        'Email ' . $email . '<br>' .
+                        'Unit '. $source . '<br><br>' .
                         '<a href="https://wa.me/' . formatPhoneNumber($phone) .'"
                         style="
                             display: inline-block;
@@ -25,15 +31,13 @@ function generateBodyContent($name,$phone,$email,$source){
                             font-size: 16px;
                             font-family: Arial, sans-serif;
                             color: white;
-                            background-color: #28a745;
+                            background-color: #25D366;
                             text-decoration: none;
                             border-radius: 10px;
                             text-align: center;
                             font-weight: bold;">
-                        Open di WA
-                        </a><br>'.
-                        'Email ' . $email . '<br>' .
-                        'Unit '. $source ;
+                        Open on WA
+                        </a>';
 }
 
 
@@ -57,12 +61,13 @@ if (isset($_POST['name']) && isset($_POST['phone'])) {
         $mail->Port       = 587;                                 // TCP port for TLS (587)
     
         // Recipients
-        $mail->setFrom('alohapro.id@gmail.com', 'Aloha Bot');     // Sender's email and name
-        $mail->addAddress('imanuelnsdev@gmail.com', 'Aloha Admin'); // Add a recipient
-    
+        $mail->setFrom('alohaproperty.id@gmail.com', 'Aloha Bot');     // Sender's email and name
+        $mail->addAddress('alohaproperty.id@gmail.com', 'Aloha Admin'); // Add a recipient
+        //$mail->AddCC();
+
         // Content
         $mail->isHTML(true);                                     // Set email format to HTML
-        $mail->Subject = 'ALOHA DATA BARU NICH BOSQUE !!';
+        $mail->Subject = 'ALOHA NEW DATA - MICROSITE';
         $mail->Body =  generateBodyContent($name,$phone,$email,$source);
 
 
@@ -72,7 +77,7 @@ if (isset($_POST['name']) && isset($_POST['phone'])) {
         $mail->send();
 
     } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+       //  echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 
     // File path to the e-brochure
@@ -87,6 +92,15 @@ if (isset($_POST['name']) && isset($_POST['phone'])) {
         break;
     case "levante":
         $filePath = "../assets/brochure/leaflet-levante.pdf";
+        break;
+    case "z-living":
+        $filePath = "../assets/brochure/brochure-z-living.pdf";
+        break;
+    case "tanamas":
+        $filePath = "../assets/brochure/brochure-tanamas.pdf";
+        break;
+    case "water-terrace":
+        $filePath = "../assets/brochure/brochure-water-terrace.pdf";
         break;
     }
 
