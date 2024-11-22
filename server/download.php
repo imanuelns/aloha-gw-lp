@@ -84,7 +84,7 @@ if (isset($_POST['name']) && isset($_POST['phone'])) {
     $filePath = "";
 
     switch ($source) {
-    case "yara-new":
+    case "yara":
         $filePath = "../assets/brochure/brochure-yara.pdf";
         break;
     case "vicente":

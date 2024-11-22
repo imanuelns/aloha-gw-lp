@@ -738,7 +738,7 @@
         <h4 class="modal-title" id="brochureModalLabel">Get Your E-Brochure</h4>
       </div>
       <div class="modal-body">
-        <form id="brochureForm" action="server/download.php" method="POST">
+        <form id="brochureForm" action="server/download.php" name="yara" method="POST">
           <div class="form-group">
             <label for="name">Nama</label>
             <input type="text" class="form-control" id="name" name="name" required>
@@ -754,7 +754,7 @@
             <input type="email" class="form-control" id="email" name="email">
             <span class="error" id="emailError"></span>
           </div>
-          <input type="text" name="source" style="display: none" value="yara-new">
+          <input type="text" name="source" style="display: none" value="yara">
           <button type="submit" class="btn btn-primary brochure-modal-download">Download Sekarang !</button>
         </form>
       </div>
