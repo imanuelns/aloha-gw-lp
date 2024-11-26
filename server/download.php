@@ -5,6 +5,8 @@ use PHPMailer\PHPMailer\Exception;
 
 require '../vendor/autoload.php';
 
+include 'gsheet.php';
+
 $mail = new PHPMailer(true);
 
 
@@ -23,6 +25,7 @@ function generateBodyContent($name,$phone,$email,$source){
     return '<h2> ALOHA MICROSITE DATA </h2><br>' .
                         'Nama ' . $name . '<br>' .
                         'Email ' . $email . '<br>' .
+                        'Phone ' . $phone . '<br>' .
                         'Unit '. $source . '<br><br>' .
                         '<a href="https://wa.me/' . formatPhoneNumber($phone) .'"
                         style="
@@ -76,6 +79,8 @@ if (isset($_POST['name']) && isset($_POST['phone'])) {
         // Send the email
         $mail->send();
 
+        // Write data recap to gsheet
+        writeToGoogleSheet($name,$phone,$email,$source);
     } catch (Exception $e) {
        //  echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
@@ -129,4 +134,6 @@ if (isset($_POST['name']) && isset($_POST['phone'])) {
 } else {
     echo "Required fields are missing.";
 }
+
+
 ?>
