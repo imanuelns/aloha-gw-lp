@@ -587,6 +587,10 @@ color: #777;
 	/*background: url(https://www.grandwisata.net/wp-content/uploads/2024/04/the-kaia-hero-banner.webp) center center no-repeat;*/
 }
 
+.intro-new-giva {
+	background: url(../img/grandwisata/yara/yara.png) center center no-repeat;
+}
+
 /* CUSTOM INTERRUPT MODAL */
 .int-modal-content {
 	background-color: transparent;
