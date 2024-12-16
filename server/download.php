@@ -107,6 +107,9 @@ if (isset($_POST['name']) && isset($_POST['phone'])) {
     case "water-terrace":
         $filePath = "../assets/brochure/brochure-water-terrace.pdf";
         break;
+    case "giva":
+        $filePath = "../assets/brochure/brochure-giva.pdf"; // TODO : update brochure location
+        break;
     }
 
     // Check if file exists
