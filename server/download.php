@@ -108,7 +108,7 @@ if (isset($_POST['name']) && isset($_POST['phone'])) {
         $filePath = "../assets/brochure/brochure-water-terrace.pdf";
         break;
     case "giva":
-        $filePath = "../assets/brochure/brochure-giva.pdf"; // TODO : update brochure location
+        $filePath = "../assets/brochure/brochure-giva.pdf"; // TODO : update brochure location, exist for honey pot :)
         break;
     }
 
@@ -130,7 +130,7 @@ if (isset($_POST['name']) && isset($_POST['phone'])) {
         // Read the file and output it to the response
         readfile($filePath); 
     } else {
-        echo "The requested file is not available.";
+        // echo "The requested file is not available.";
         header("Location: ../" . $_POST['source'] . ".html");
     }
     exit;
