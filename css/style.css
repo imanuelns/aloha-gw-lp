@@ -591,6 +591,10 @@ color: #777;
 	background: url(../img/grandwisata/giva/giva-bg.jpeg) center center no-repeat;
 }
 
+.intro-new-altara {
+	background: url(../img/grandwisata/altara/altara-bg.png) center center no-repeat;
+}
+
 /* CUSTOM INTERRUPT MODAL */
 .int-modal-content {
 	background-color: transparent;
