@@ -108,7 +108,10 @@ if (isset($_POST['name']) && isset($_POST['phone'])) {
         $filePath = "../assets/brochure/brochure-water-terrace.pdf";
         break;
     case "giva":
-        $filePath = "../assets/brochure/brochure-giva.pdf"; // TODO : update brochure location, exist for honey pot :)
+        $filePath = "../assets/brochure/brochure-giva.pdf";
+        break;
+    case "altara":
+        $filePath = "../assets/brochure/brochure-altara.pdf"; 
         break;
     }
 
