@@ -595,6 +595,14 @@ color: #777;
 	background: url(../img/grandwisata/altara/altara-bg.png) center center no-repeat;
 }
 
+.intro-new-nuone {
+	background: url(../img/grandwisata/nuone/banner.png) center center no-repeat;
+}
+
+.intro-new-dovia {
+	background: url(../img/grandwisata/dovia/dovia-bg.png) center center no-repeat;
+}
+
 /* CUSTOM INTERRUPT MODAL */
 .int-modal-content {
 	background-color: transparent;
@@ -737,4 +745,12 @@ color: #777;
 
 .bold-text {
     font-weight: bold;
+}
+
+.product-action .btn {
+  min-width: 80px;
+}
+
+.product-action {
+  margin-bottom: 10px;
 }

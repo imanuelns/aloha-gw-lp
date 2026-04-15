@@ -113,6 +113,12 @@ if (isset($_POST['name']) && isset($_POST['phone'])) {
     case "altara":
         $filePath = "../assets/brochure/brochure-altara.pdf"; 
         break;
+    case "nuone":
+        $filePath = "../assets/brochure/brochure-nuone.pdf"; 
+        break;
+    case "dovia":
+        $filePath = "../assets/brochure/brochure-dovia.pdf"; 
+        break;
     }
 
     // Check if file exists
