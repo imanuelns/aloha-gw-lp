@@ -559,7 +559,17 @@ color: #777;
 }
 
 .intro-new-westfield {
-	background: url(../img/grandwisata/new-westfield/new-west-field-bg.jpg) center center no-repeat;
+	background: url(../img/grandwisata//new-west-field-bg.jpg) center center no-repeat;
+}
+
+.intro-tera-prospera {
+	background: url(../img/grandwisata/tera-prospera/tera-prospera-bg.jpg) center center no-repeat;
+	background-size: 100% auto;
+}
+
+.intro-livia {
+	background: url(../img/grandwisata/livia//Livia-9/livia-bg.JPG) center center no-repeat;
+	background-size: 100% auto;
 }
 
 .intro-z-living {
