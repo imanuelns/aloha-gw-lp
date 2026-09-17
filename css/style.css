@@ -572,6 +572,11 @@ color: #777;
 	background-size: 100% auto;
 }
 
+.intro-dovia {
+	background: url(../img/grandwisata/dovia/Dovia-9/dovia-9-bg.jpg) center center no-repeat;
+	background-size: 100% auto;
+}
+
 .intro-z-living {
 	background: url(../img/grandwisata/z-living/z-living-bg.jpeg) center center no-repeat;
 }
@@ -582,6 +587,7 @@ color: #777;
 
 .intro-tanamas {
 	background: url(../img/grandwisata/tanamas/tanamas-bg.jpeg) center center no-repeat;
+	background-size: 100% auto;
 }
 
 .intro-new-cherry-ville {
@@ -599,10 +605,15 @@ color: #777;
 
 .intro-new-giva {
 	background: url(../img/grandwisata/giva/giva-bg.jpeg) center center no-repeat;
+	background-size: 100% auto;
 }
 
 .intro-new-altara {
 	background: url(../img/grandwisata/altara/altara-bg.png) center center no-repeat;
+}
+.intro-nuone {
+	background: url(../img/grandwisata/nuone/N1/nuone-bg.jpg) center center no-repeat;
+	background-size: 100% auto;
 }
 
 /* CUSTOM INTERRUPT MODAL */
