@@ -8,7 +8,7 @@ function writeToGoogleSheet($name,$phone,$email,$source) {
     $client = new Client();
     $client->setApplicationName('Google Sheets API PHP');
     $client->setScopes([Sheets::SPREADSHEETS]);
-    $client->setAuthConfig('service-accounts.json');
+    $client->setAuthConfig('__DIR__ .service-accounts.json');
     $client->setAccessType('offline');
 
     // Initialize Sheets API Service

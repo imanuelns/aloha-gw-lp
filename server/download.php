@@ -81,8 +81,8 @@ if (isset($_POST['name']) && isset($_POST['phone'])) {
 
         // Write data recap to gsheet
         writeToGoogleSheet($name,$phone,$email,$source);
-    } catch (Exception $e) {
-       //  echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    } catch (\Throwable $e) {
+       //  jangan hentikan proses dowload;
     }
 
     // File path to the e-brochure
